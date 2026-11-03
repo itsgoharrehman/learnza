@@ -1,0 +1,30 @@
+name: Feature Request
+description: Propose a new capability or architectural improvement for Learnza.
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an improvement or new feature for the digital library platform.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What limitation or workflow gap does this feature address?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe how the feature should function.
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Architectural and Security Considerations
+      description: Does this affect Supabase RLS policies, Cloudflare Worker bandwidth, or client bundle performance?
+    validations:
+      required: false
