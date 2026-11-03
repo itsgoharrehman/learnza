@@ -1,0 +1,28 @@
+{
+  "name": "learnza",
+  "version": "1.0.0",
+  "description": "Modern open-source digital e-library platform with Supabase authentication, PostgreSQL RLS, Netlify static delivery, and Cloudflare Workers streaming proxy.",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "wrangler dev",
+    "deploy:worker": "wrangler deploy"
+  },
+  "keywords": [
+    "digital-library",
+    "supabase",
+    "postgresql",
+    "cloudflare-workers",
+    "authentication",
+    "jamstack",
+    "vanilla-javascript",
+    "responsive-design",
+    "open-source"
+  ],
+  "author": "Gohar Rehman <goharrehmanfsd260@gmail.com> (https://github.com/itsgoharrehman)",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4",
+    "wrangler": "^3.114.0"
+  }
+}
