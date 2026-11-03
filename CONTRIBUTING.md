@@ -1,37 +1,65 @@
 # Contributing Guidelines
 
-Thank you for your interest in contributing. We welcome contributions that improve performance, resolve bugs, enhance documentation, or expand feature capabilities.
+Thank you for contributing to Learnza. We appreciate community contributions that improve performance, expand catalog capabilities, enhance documentation, or resolve bugs.
+
+---
 
 ## Code of Conduct
 
-All contributors and participants are expected to adhere to the standards described in [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+All contributors and participants are expected to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+---
+
+## Architectural Principles
+
+Before writing code, please review our core architectural invariants:
+
+1. **Zero Framework Bloat**: Learnza is deliberately built with vanilla ES6+ JavaScript, semantic HTML5, and standard CSS3. Do not add React, Vue, jQuery, or heavy UI libraries.
+2. **Strict RLS Adherence**: Any database schema changes must reside in `db/database_setup.sql` and include strict Row-Level Security (RLS) policies.
+3. **Safe DOM Manipulation**: Always use `textContent` or sanitized DOM creation methods. Avoid raw `innerHTML` insertions of user-supplied data to prevent DOM XSS.
+4. **Credential Isolation**: Never commit Supabase service role keys, private Cloudflare tokens, or production database connection strings.
+
+---
 
 ## Getting Started
 
-1. Fork the repository on GitHub.
-2. Clone your fork locally:
+1. Fork the repository:
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
-   ```
-3. Create a descriptive feature branch:
-   ```bash
-   git checkout -b feature/your-feature-name
+   git clone https://github.com/<your-username>/learnza.git
+   cd learnza
    ```
 
-## Development Standards
+2. Create a focused branch:
+   ```bash
+   git checkout -b feature/category-filter-optimization
+   # or
+   git checkout -b fix/preview-loading-state
+   ```
 
-* **Clean Code**: Follow idiomatic patterns for the project language.
-* **Testing**: Ensure existing test suites pass and write new tests for added functionality.
-* **Documentation**: Update relevant README or API docs if altering functional behavior.
-* **Commit Messages**: Write concise, imperative commit messages (e.g. `feat: add request timeout handler`).
+3. Install development tooling and run locally:
+   ```bash
+   npm install
+   npm start
+   ```
 
-## Submitting Pull Requests
+4. Verify changes locally across major browsers (Chrome, Firefox, Safari, Edge).
 
-1. Rebase your branch against the latest `main` branch.
-2. Push changes to your fork.
-3. Open a Pull Request against `main` with a clear description of the problem solved and test results.
+---
 
-## Reporting Bugs
+## Commit Guidelines
 
-Please search existing issues before opening a new bug report. Use the provided bug report template to supply reproducible steps, system details, and expected outcomes.
+Use concise, imperative commit messages:
+
+* `feat: add sort by publication year to catalog`
+* `fix: handle network disconnect during pdf preview stream`
+* `docs: clarify cloudflare worker deployment steps`
+* `refactor: optimize dom rendering loop in main.js`
+
+---
+
+## Pull Request Process
+
+1. Ensure all changes adhere to vanilla JavaScript conventions.
+2. Verify that no secrets, credentials, or private keys are committed.
+3. Test edge Worker modifications locally using `npm run dev`.
+4. Open a Pull Request against the `main` branch and complete the pull request template checklist.
