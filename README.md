@@ -1,6 +1,20 @@
-# learnza
+<div align="center">
+  <h1>learnza</h1>
+  <p>Modern open-source digital e-library platform with Supabase authentication, PostgreSQL RLS, Netlify static delivery, and Cloudflare Workers streaming proxy.</p>
 
-[![Release](https://img.shields.io/badge/Release-v1.0.0-0969da?style=flat-square)](https://github.com/itsgoharrehman/learnza/releases/tag/v1.0.0) [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![Supabase](https://img.shields.io/badge/Supabase-Database%20%26%20Auth-3FCF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com) [![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-Edge%20Proxy-F38020?style=flat-square&logo=cloudflareworkers&logoColor=white)](https://workers.cloudflare.com) [![Netlify](https://img.shields.io/badge/Netlify-Static%20Hosting-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://www.netlify.com) [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+  <p>
+    <a href="https://github.com/itsgoharrehman/learnza/releases"><img src="https://img.shields.io/github/v/release/itsgoharrehman/learnza?style=flat-square&logo=github&logoColor=white" alt="Release"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/github/license/itsgoharrehman/learnza?style=flat-square&logo=opensourceinitiative&logoColor=white" alt="License"></a>
+    <img src="https://img.shields.io/badge/Runtime-Vanilla_JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
+    <img src="https://img.shields.io/badge/Database-Supabase_PostgreSQL-3FCF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase">
+    <img src="https://img.shields.io/badge/Edge-Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare Workers">
+    <img src="https://img.shields.io/badge/Hosting-Netlify_CDN-00C7B7?style=flat-square&logo=netlify&logoColor=white" alt="Netlify">
+    <a href="https://github.com/itsgoharrehman/learnza/stargazers"><img src="https://img.shields.io/github/stars/itsgoharrehman/learnza?style=flat-square&logo=github&logoColor=white" alt="Stars"></a>
+    <a href="https://github.com/itsgoharrehman/learnza/issues"><img src="https://img.shields.io/github/issues/itsgoharrehman/learnza?style=flat-square&logo=github&logoColor=white" alt="Issues"></a>
+  </p>
+</div>
+
+---
 
 An open-source, high-performance digital e-library platform designed for seamless document discovery, real-time catalog search, in-browser PDF previews, and edge-proxied document streaming.
 
