@@ -1,0 +1,42 @@
+name: Bug Report
+description: Report a reproducible issue or defect in Learnza.
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide detailed information to help reproduce and resolve this bug.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: What browser and operating system were you using?
+      placeholder: "e.g., Chrome 124 on macOS 14.4 / Firefox 125 on Windows 11"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Describe the exact steps required to encounter the problem.
+      placeholder: |
+        1. Navigate to index.html
+        2. Click on category 'Computer Science'
+        3. Attempt to preview 'Operating Systems Concepts'
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually occurred? Include browser console errors if available.
+    validations:
+      required: true
